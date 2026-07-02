@@ -1,0 +1,234 @@
+\documentclass[aspectratio=169,10pt]{beamer}
+
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[utf8]{inputenc}
+  \usepackage[T5]{fontenc}
+  \usepackage[vietnamese,english]{babel}
+\else
+  \usepackage{fontspec}
+  \usepackage{polyglossia}
+  \setmainlanguage{vietnamese}
+  \setotherlanguage{english}
+  \setmainfont{Times New Roman}
+\fi
+
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{hyperref}
+
+\usetheme{Madrid}
+\useoutertheme{infolines}
+\useinnertheme{rounded}
+
+\definecolor{darkblue}{RGB}{31,73,125}
+\definecolor{darkbluelight}{RGB}{0,112,192}
+
+\setbeamercolor{palette primary}{bg=darkblue, fg=white}
+\setbeamercolor{structure}{fg=darkblue}
+\setbeamercolor{title}{fg=darkblue}
+\setbeamercolor{item}{fg=darkblue}
+
+\setbeamercolor{block title}{fg=white, bg=darkblue}
+\setbeamercolor{block body}{fg=black, bg=darkblue!10}
+
+\setbeamercolor{block title alerted}{fg=white, bg=darkbluelight}
+\setbeamercolor{block body alerted}{fg=black, bg=darkbluelight!10}
+
+\setbeamercolor{block title example}{fg=white, bg=darkbluelight}
+\setbeamercolor{block body example}{fg=black, bg=darkbluelight!10}
+
+\makeatletter
+\setbeamertemplate{title page}[default][colsep=-4bp,rounded=true,shadow=true]
+\makeatother
+
+\title{\TODO{Presentation title}}
+\subtitle{\TODO{Subtitle or keywords}}
+\author[\TODO{Short author label}]{\TODO{Team or group name}}
+\institute{\TODO{Department, e.g. Khoa Khoa Học Máy Tính - UIT}}
+\date{\TODO{Date, e.g. Tháng 5 năm 2026}}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\vspace{-0.3cm}
+\begin{center}
+\small\textbf{\TODO{Team members: Name 1, Name 2, Name 3}}
+\end{center}
+\end{frame}
+
+\begin{frame}{Nội dung trình bày}
+\tableofcontents
+\end{frame}
+
+% ======================================================
+\section{\TODO{Section title}}
+% ======================================================
+
+\begin{frame}{\TODO{Frame title}}
+
+\textbf{\TODO{Heading}}
+
+\vspace{0.3cm}
+
+\TODO{Content text. Use clear, concise bullet points for presentations.}
+
+\end{frame}
+
+\begin{frame}{\TODO{Frame title}}
+
+\begin{block}{\TODO{Block title}}
+\TODO{Block content - use for key points, definitions, or takeaways.}
+\end{block}
+
+\vspace{0.3cm}
+
+\begin{block}{\TODO{Block title}}
+\TODO{Another block of content.}
+\end{block}
+
+\end{frame}
+
+\begin{frame}{\TODO{Frame title}}
+
+\begin{columns}
+
+\column{0.48\textwidth}
+
+\begin{block}{\TODO{Left column block}}
+\TODO{Left column content}
+\end{block}
+
+\column{0.48\textwidth}
+
+\begin{block}{\TODO{Right column block}}
+\TODO{Right column content}
+\end{block}
+
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{\TODO{Frame title}}
+
+\begin{itemize}
+    \item \TODO{Key point 1}
+    \item \TODO{Key point 2}
+    \item \TODO{Key point 3}
+\end{itemize}
+
+\vspace{0.3cm}
+
+\begin{block}{\TODO{Takeaway}}
+\TODO{Summary or conclusion for this slide.}
+\end{block}
+
+\end{frame}
+
+\begin{frame}{\TODO{Frame title with Equation}}
+
+\textbf{Example equation:}
+
+\[
+\arg\min_{x} \mathcal{L}(x) = \lambda \cdot \mathcal{L}_{\text{primary}} + d(x)
+\]
+
+\vspace{0.3cm}
+
+\textbf{Trong đó:}
+
+\begin{itemize}
+    \item \(\mathcal{L}_{\text{primary}}\): \TODO{Describe component}
+    \item \(d(x)\): \TODO{Describe component}
+    \item \(\lambda\): \TODO{Describe parameter}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{\TODO{Frame title with Figure}}
+
+\centering
+\includegraphics[width=0.86\linewidth,height=0.63\textheight,keepaspectratio]{\TODO{image_filename.png}}
+
+\vspace{-0.05cm}
+
+\begin{block}{\TODO{Takeaway}}
+\centering
+\TODO{One-line takeaway from the figure.}
+\end{block}
+
+\end{frame}
+
+\begin{frame}{\TODO{Frame title with Table}}
+
+\begin{block}{\TODO{Block title}}
+\centering
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{\TODO{Col 1}} & \textbf{\TODO{Col 2}} & \textbf{\TODO{Col 3}} & \textbf{\TODO{Col 4}} \\
+\hline
+\TODO{Row 1} & \TODO{} & \TODO{} & \TODO{} \\
+\TODO{Row 2} & \TODO{} & \TODO{} & \TODO{} \\
+\hline
+\end{tabular}
+\end{block}
+
+\end{frame}
+
+% ======================================================
+\section{\TODO{Section title}}
+% ======================================================
+
+\begin{frame}{\TODO{Frame title}}
+
+\TODO{Add more frames and sections as needed.}
+
+\end{frame}
+
+% ======================================================
+\section{\TODO{Conclusion}}
+% ======================================================
+
+\begin{frame}{\TODO{Kết luận}}
+
+\begin{enumerate}
+    \item \TODO{Key finding 1}
+    \item \TODO{Key finding 2}
+    \item \TODO{Key finding 3}
+    \item \TODO{Key finding 4}
+\end{enumerate}
+
+\vspace{0.4cm}
+
+\begin{block}{\TODO{Đóng góp chính}}
+\TODO{Main contribution or conclusion of your work.}
+\end{block}
+
+\end{frame}
+
+\begin{frame}{\TODO{Future Work}}
+
+\begin{itemize}
+    \item \TODO{Future direction 1}
+    \item \TODO{Future direction 2}
+    \item \TODO{Future direction 3}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\centering
+\Huge Thank You!
+
+\vspace{0.5cm}
+Questions \& Discussion
+\end{frame}
+
+\end{document}
