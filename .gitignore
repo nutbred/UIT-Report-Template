@@ -17,3 +17,6 @@
 # OS files
 .DS_Store
 Thumbs.db
+
+# Qwen session files
+.qwen/
